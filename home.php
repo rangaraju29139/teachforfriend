@@ -42,7 +42,7 @@
    </div>
    <div class="col-lg-8">
  <?php
- $sql = "SELECT * FROM topics where not subjectid=17 LIMIT 30 ";
+ $sql = "SELECT * FROM topics where not subjectid=17 LIMIT 30 order by date";
  $result = mysqli_query($conn,$sql);
 echo " <div class='row'>";
 if(mysqli_num_rows($result) > 0){
