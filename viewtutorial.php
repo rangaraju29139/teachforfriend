@@ -68,7 +68,8 @@ allowfullscreen></iframe>
 
        </div>";
        if($row['userid']==$email){
-           echo "    <a href='edittutorial.php?topicid=".$row['topicid']."'> <button class='btn btn-primary'>Edit Tutorial</button> </a>";
+           echo "    <a href='edittutorial.php?topicid=".$row['topicid']."'> <button class='btn btn-primary'>Edit Tutorial</button> </a><br>
+           <a href='deletetutorial.php?topicid=".$row['topicid']."'> <button class='btn btn-danger'>delete Tutorial</button> </a>";
        }
        echo "
 
